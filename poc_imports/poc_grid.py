@@ -113,5 +113,5 @@ class Grid:
         Takes point in screen coordinates and returns index of
         containing cell
         """
-        return (point[1] / cell_size, point[0] / cell_size) 
+        return (int(point[1] / cell_size), int(point[0] / cell_size)) 
 

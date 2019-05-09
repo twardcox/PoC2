@@ -4,7 +4,7 @@ Simulation of wild fire using breadth first search (BFS)
 Click in the canvas to add cells to the boundary of the fire
 """
 "well well well"
-from ..poc_imports.poc_grid import Grid
+from poc_imports import poc_grid
 from poc_imports import poc_queue
 from poc_imports import poc_wildfire_gui
 
