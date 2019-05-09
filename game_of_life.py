@@ -2,8 +2,8 @@
 Game of Life demo
 """
 
-# import poc_grid
-# import poc_gol_gui
+from poc_imports import poc_grid
+from poc_imports import poc_gol_gui
 
 # constants
 EMPTY = 0 

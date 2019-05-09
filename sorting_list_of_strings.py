@@ -39,7 +39,7 @@ def run_example():
     string_length = 3
     test_list = ["".join([random.choice(CHARACTERS) for _ in range(string_length)]) 
                  for dummy_index in range (50)]
-    print "Unsorted string list is", test_list
-    print "Sorted string list is", string_sort(test_list, string_length)
+    print( "Unsorted string list is", test_list)
+    print ("Sorted string list is", string_sort(test_list, string_length))
      
 run_example()

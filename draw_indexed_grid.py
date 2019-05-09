@@ -2,7 +2,7 @@
 Draw an indexed grid
 """
 
-import simplegui
+import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 
 CELL_SIZE = 50
 GRID_HEIGHT = 6
