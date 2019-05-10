@@ -6,7 +6,7 @@ Click in the canvas to add cells to the boundary of the fire
 "well well well"
 from poc_imports import poc_grid
 from poc_imports import poc_queue
-from poc_imports import poc_wildfire_gui
+from poc_imports import poc_zombie_gui
 
 # constants
 EMPTY = 0 

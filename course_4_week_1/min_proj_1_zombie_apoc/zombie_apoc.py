@@ -3,9 +3,9 @@ Student portion of Zombie Apocalypse mini-project
 """
 
 import random
-import poc_grid
-import poc_queue
-import poc_zombie_gui
+from poc_imports import poc_grid
+from poc_imports import poc_queue
+from poc_imports import poc_zombie_gui
 
 # global constants
 EMPTY = 0 
@@ -47,7 +47,7 @@ class Apocalypse(poc_grid.Grid):
         Set cells in obstacle grid to be empty
         Reset zombie and human lists to be empty
         """
-        pass
+        self.poc_grid.Grid.__init__(self.grid_height, self.grid_width)
         
     def add_zombie(self, row, col):
         """
