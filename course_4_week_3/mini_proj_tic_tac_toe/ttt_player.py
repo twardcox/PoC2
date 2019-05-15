@@ -45,8 +45,6 @@ def mm_move(board, player):
         non_player = (square[0], square[1])
         score, move = mm_move(clone_board, provided.switch_player(player))
 
-        best_score = score,  best_move = non_player if score > best_score else -1 if a < b else 0
-
         if score > best_score:
             best_score = score
             best_move = non_player
@@ -57,8 +55,7 @@ def mm_move(board, player):
 
 def move_wrapper(board, player, trials):
     """
-    Wrapper to allow the use of the same infrastructure that was used
-    for Monte Carlo Tic-Tac-Toe.
+    Wrapper to allow the use of the same infrastructure that was used for Monte Carlo Tic-Tac-Toe.
     """
     move = mm_move(board, player)
     assert move[1] != (-1, -1), "returned illegal move (-1, -1)"
