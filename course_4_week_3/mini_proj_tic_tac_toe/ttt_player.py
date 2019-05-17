@@ -55,7 +55,7 @@ def mm_move(board, player):
 
 def move_wrapper(board, player, trials):
     """
-    Wrapper to allow the use of the same infrastructure that was used for Monte Carlo Tic-Tac-Toe.
+    Wrapper to allow the use of the same infrastructure that was usedfor Monte Carlo Tic-Tac-Toe.
     """
     move = mm_move(board, player)
     assert move[1] != (-1, -1), "returned illegal move (-1, -1)"

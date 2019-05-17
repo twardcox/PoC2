@@ -139,6 +139,7 @@ class Apocalypse(poc_grid.Grid):
 
                 if self.is_empty(neighbor[0],neighbor[1]) and visited.is_empty(neighbor[0], neighbor[1]):
                     distance_field[neighbor[0]][neighbor[1]] = distance_field[current_cell[0]][current_cell[1]] + 1
+                    
                     visited.set_full(neighbor[0], neighbor[1])
                     boundary.enqueue(neighbor)
 
